@@ -13,7 +13,7 @@ _putchar('0');
 for (i = 1; i <= 9; i++)
 {
 int result = n * i;
-putchar(',');
+_putchar(',');
 _putchar(' ');
 (result <= 9);
 _putchar(' ');

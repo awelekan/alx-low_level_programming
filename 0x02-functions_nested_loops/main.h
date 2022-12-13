@@ -1,8 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void print_aphabelt(void);
-void print_alphabelt_x10(void);
+void print_aphabet(void);
+void print_alphabet_x10(void);
 int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
