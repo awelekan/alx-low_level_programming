@@ -13,10 +13,10 @@ char rv = s[0];
 int j = 0;
 int i;
 while (s[j] != '\0')
-c++;
+j++;
 for (i = 0; i < j; i++)
 {
-c--;
+j--;
 rv = s[i];
 s[i] = s[j];
 s[j] = rv;
