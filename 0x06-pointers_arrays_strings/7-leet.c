@@ -1,35 +1,35 @@
-#include "main.h"
 /**
- * *leet - check the code for Holberton School students.
+ * leet - a function that encodes a string into 1337
  *
- * @str: string.
- * Return: string.
+ * @s: string input
+ *
+ * Return: @s
  */
-char *leet(char *str)
+char *leet(char *s)
 {
-int i;
-for (i = 0; str[i] != '\0'; i++)
+int i, c = 0;
+int sl[] = {97, 101, 111, 116, 108};
+int ul[] = {65, 69, 79, 84, 76};
+int n[] = {52, 51, 48, 55, 49};
+/*iterate values in array s*/
+while (s[c] != '\0')
 {
-if (str[i] == 'a' || str[i] == 'A')
+/**
+ * loop through array value five times
+ * to check if the value is equal to
+ * any small letter in array sl or
+ * upper letter in array ul and if it
+ * is replace it with the value in array n
+ */
+for (i = 0; i < 5; i++)
 {
-str[i] = '4';
-}
-else if (str[i] == 'e' || str[i] == 'E')
+if (s[c] == sl[i] || s[c] == ul[i])
 {
-str[i] = '3';
-}
-else if (str[i] == 'o' || str[i] == 'O')
-{
-str[i] = '0';
-}
-else if (str[i] == 't' || str[i] == 'T')
-{
-str[i] = '7';
-}
-else if (str[i] == 'l' || str[i] == 'L')
-{
-str[i] = '1';
+s[c] = n[i];
+break;
 }
 }
-return (str);
+c++;
+}
+return (s);
 }
